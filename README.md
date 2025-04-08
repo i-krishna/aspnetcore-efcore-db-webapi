@@ -36,13 +36,20 @@ Migrations translate C# model classes (Product.cs) into actual database tables (
 dotnet ef migrations add InitialCreate
 dotnet ef database update
 ```
+This creates an app.db SQLite file and the Migrations/ folder.
+
 b. Start the API:
 ```
 dotnet run
 ```
 c. Test the endpoint:
 
-Open https://localhost:5001/products in your browser or Postman.
+GET https://localhost:5001/api/products
+Returns products.
+
+POST https://localhost:5001/api/products
+Adds a new product (send JSON body).
+
 ```
 [
   { "id": 1, "name": "P1", "price": 49.99 },
