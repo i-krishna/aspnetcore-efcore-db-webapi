@@ -17,7 +17,7 @@ Install-Package Microsoft.EntityFrameworkCore
 Install-Package Microsoft.EntityFrameworkCore.SqlServer  # For SQL Server
 ```
 3. File Structure of defining model in Product.cs, Creating DbContext in AppDbContext.cs & Configuring Dbcontext in Program.cs
-
+```
 aspnetcore-efcore-db-webapi/
 ├── Models/
 │   └── Product.cs
@@ -26,7 +26,7 @@ aspnetcore-efcore-db-webapi/
 ├── appsettings.json
 ├── Program.cs
 └── aspnetcore-efcore-db-webapi.csproj
-
+```
 4. Run the Project
 
 a. Apply migrations
