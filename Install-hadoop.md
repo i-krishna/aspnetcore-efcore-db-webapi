@@ -29,6 +29,7 @@ cd /usr/local/Cellar/hadoop/3.0.0/libexec/etc/hadoop
 ```
 
 1. Configure hadoop-env.sh
+   
 ```
 export JAVA_HOME=$(/usr/libexec/java_home)  # Auto-detects Java path
 export HADOOP_HOME=/usr/local/Cellar/hadoop/3.0.0
@@ -37,7 +38,6 @@ export HADOOP_OPTS="--add-modules java.activation"  # Only for JDK 9+
 
 2. Configure core-site.xml
    
-xml
 ```
 <configuration>
   <property>
@@ -48,7 +48,7 @@ xml
 ```
 
 3. Configure hdfs-site.xml
-xml
+
 ```
 <configuration>
   <property>
@@ -71,7 +71,7 @@ xml
 ```
 
 4. Configure mapred-site.xml
-xml
+
 ```
 <configuration>
   <property>
@@ -91,7 +91,7 @@ Copy
 </configuration>
 ```
 5. Configure yarn-site.xml
-xml
+
 ```
 <configuration>
   <property>
@@ -154,6 +154,7 @@ sudo chown -R $USER ${HADOOP_HOME}/hadoop_data
 rm -rf /tmp/hadoop-*
 hdfs namenode -format
 ```
+
 **References**
 - Hadoop Official Docs - https://hadoop.apache.org/docs/stable/
 - Michael Noll’s Tutorial - https://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/
