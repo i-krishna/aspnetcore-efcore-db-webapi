@@ -1,4 +1,16 @@
 # Hadoop 3.0.0 Installation Guide for macOS
+
+The installation also includes HDFS (Distributed file storage systesm), YARN (for resource management) and MapReduce (for processing). 
+
+## Example Cluster Setup
+```
+**Node	         Components**
+Master Node	   NameNode, ResourceManager (YARN)
+Slave Node 1	DataNode, NodeManager (YARN)
+Slave Node 2	DataNode, NodeManager (YARN)
+Slave Node 3	DataNode, NodeManager (YARN)
+```
+
 https://hadoop.apache.org/ 
 
 ## Prerequisites
@@ -49,11 +61,13 @@ export HADOOP_OPTS="--add-modules java.activation"  # Only for JDK 9+
 
 3. Configure hdfs-site.xml
 
+This is a single-node HDFS installation (dfs.replication=1), meaning all HDFS components are running on your local machine rather than being distributed across multiple nodes, which is typical for development/testing environments. For production install, you can change replication to number of required nodes (dfs.replication=3) means that each block of data will be stored on 3 different DataNodes (slave nodes) for fault tolerance. 
+
 ```
 <configuration>
   <property>
     <name>dfs.replication</name>
-    <value>1</value>  <!-- Single-node cluster -->
+    <value>1</value>  <!-- Single-node cluster --> 
   </property>
   <property>
     <name>dfs.namenode.name.dir</name>
