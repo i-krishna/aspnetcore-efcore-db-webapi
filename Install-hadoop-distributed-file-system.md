@@ -4,7 +4,7 @@ The installation also includes HDFS (Distributed file storage systesm), YARN (fo
 
 ## Example Cluster Setup
 ```
-**Node	         Components**
+**Node**	      **Components**
 Master Node	   NameNode, ResourceManager (YARN)
 Slave Node 1	DataNode, NodeManager (YARN)
 Slave Node 2	DataNode, NodeManager (YARN)
