@@ -79,16 +79,7 @@ export HADOOP_OPTS="--add-modules java.activation"  # Only for JDK 9+
     <value>yarn</value>
   </property>
 </configuration>
-Run HTML
-6. Configure yarn-site.xml
-xml
-Copy
-<configuration>
-  <property>
-    <name>yarn.nodemanager.aux-services</name>
-    <value>mapreduce_shuffle</value>
-  </property>
-</configuration>
+
 ```
 5. Configure yarn-site.xml
 
