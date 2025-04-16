@@ -1,10 +1,10 @@
 # Hadoop 3.0.0 Installation Guide for macOS
 
-The installation also includes HDFS (Distributed file storage systesm), YARN (for resource management) and MapReduce (for processing). 
+The installation includes HDFS (Distributed file storage systesm), YARN (for resource management) and MapReduce (for processing). 
 
 ## Example Cluster Setup
 ```
-**Node**	      **Components**
+Node            Components
 Master Node	   NameNode, ResourceManager (YARN)
 Slave Node 1	DataNode, NodeManager (YARN)
 Slave Node 2	DataNode, NodeManager (YARN)
