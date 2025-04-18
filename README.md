@@ -1,3 +1,6 @@
+
+[Fabric Analytics Key Concepts](/MS%20Fabric%20Analytics%20Concepts%20Notes.pdf) 
+
 # aspnetcore-efcore-db-webapi
 
 A scalable .NET Solutions Architecture (ASP.NET Core + EF Core) code-first database example, where C# classes define the database schema. EF Core tracks schema changes via migrations for version control. This is designed with enterprise patterns (SOLID, Clean Architecture). Demonstrates:  
