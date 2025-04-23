@@ -166,12 +166,11 @@ hdfs namenode -format
 - Hadoop Official Docs - https://hadoop.apache.org/docs/stable/
 - Michael Noll’s Tutorial - https://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/
 - https://www.michael-noll.com/tutorials/
-  
-Book: Big Data , Nathan Marz - Verlag: Manning
-https://storm.apache.org/documentation/Tutorial.html
-http://kafka.apache.org/
-http://www.michael-noll.com/blog/2014/08/18/apache-kafka-training-deck-and-tutorial/ 
-https://academy.datastax.com/courses/ds101-introduction-cassandra
-https://academy.datastax.com/courses/ds201-cassandra-core-concepts
-https://docs.docker.com/get-started/
-https://dcos.io/docs/1.8/usage/tutorials/dcos-101/
+- Book: Big Data , Nathan Marz - Verlag: Manning
+- https://storm.apache.org/documentation/Tutorial.html
+- http://kafka.apache.org/
+- http://www.michael-noll.com/blog/2014/08/18/apache-kafka-training-deck-and-tutorial/ 
+- https://academy.datastax.com/courses/ds101-introduction-cassandra
+- https://academy.datastax.com/courses/ds201-cassandra-core-concepts
+- https://docs.docker.com/get-started/
+- https://dcos.io/docs/1.8/usage/tutorials/dcos-101/
