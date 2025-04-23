@@ -163,3 +163,4 @@ hdfs namenode -format
 **References**
 - Hadoop Official Docs - https://hadoop.apache.org/docs/stable/
 - Michael Noll’s Tutorial - https://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/
+- https://www.michael-noll.com/tutorials/ 
