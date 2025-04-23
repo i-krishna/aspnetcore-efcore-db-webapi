@@ -59,3 +59,20 @@ Adds a new product (send JSON body).
   { "id": 2, "name": "P2", "price": 199.99 }
 ]
 ```
+
+# Refereces 
+
+## Agile Software development 
+The Bible of Design Patterns:  Elements of Reusable Object-Oriented Software. Addison Wesley.
+http://wwwswt.informatik.uni-rostock.de/patterns/index.html
+https://www.edx.org/course/agile-software-development-ethx-asd-1x (scrum)
+
+## Microservices architectures
+- https://dotnet.microsoft.com/en-us/apps/aspnet/microservices
+- NodeJS (JavaScript) or Java (SpringBoot or RestEasy+Undertow)
+
+## Continuous Integration, Deployment & Delivery
+Maven, Git, GitLab, jUnit, Jenkins
+https://codeship.com/continuous-integration-essentials
+http://www.vogella.com/tutorials/Jenkins/article.html
+http://www.guru99.com/test-driven-development.html
