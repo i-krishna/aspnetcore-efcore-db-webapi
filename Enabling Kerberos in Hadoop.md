@@ -71,6 +71,7 @@ hdfs dfs -ls /user/user1
 If successful, you're authenticated!
 
 📋 Use Cases in Hadoop Ecosystem
+```
 Component	How Kerberos is Used
 HDFS	Secure access to data blocks
 YARN	Authentication of NodeManagers and ResourceManager
@@ -78,14 +79,15 @@ Hive	Secure metadata access via HiveServer2
 Spark	Secure job submission and service-to-service auth
 HBase	Authenticated read/write from/to tables
 Kafka	Broker and client authentication
-
+```
 ✅ Best Practices
+```
 Rotate keytabs and renew tickets frequently
 Secure keytab files with permissions
 Use SPNEGO (Simple and Protected GSSAPI Negotiation Mechanism) for HTTP endpoints like WebHDFS
 Integrate with LDAP for identity management
 Automate renewal of kinit using cron or ticket renewal scripts
-
+```
 🔧 Code Example: Hadoop Job with Kerberos Auth
 ```
 export HADOOP_USER_NAME=user1
