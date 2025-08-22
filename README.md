@@ -32,14 +32,58 @@ aspnetcore-efcore-db-webapi/
 ```
 4. Run the Project
 
-a. Apply migrations
+- Apply migrations : Migrations translate C# model classes (Product.cs) into actual database tables (e.g., a Products table in SQL Server). Also, track changes to schema (versioning). 
 
-Migrations translate C# model classes (Product.cs) into actual database tables (e.g., a Products table in SQL Server). Also, track changes to schema (versioning). 
+Example: 
 ```
+public class Sales
+{
+    public int Id { get; set; }
+    public string Product { get; set; }
+    public decimal Amount { get; set; }
+    // Add new properties as needed
+}
+```
+- Add a property or new class, then run migration command.
+```
+# Using Package Manager Console
+Add-Migration AddCustomerField
+
+# Or using CLI
+dotnet ef migrations add AddCustomerField
 dotnet ef migrations add InitialCreate
+```
+- Apply the migration to update the database:
+```
+# Using Package Manager Console
+Update-Database
+
+# Or using CLI
 dotnet ef database update
 ```
-This creates an app.db SQLite file and the Migrations/ folder.
+- Entity Framework generates a migration file (C#) like:
+```
+public partial class AddCustomerField : Migration
+{
+    protected override void Up(MigrationBuilder migrationBuilder)
+    {
+        migrationBuilder.AddColumn<string>(
+            name: "Customer",
+            table: "Sales",
+            nullable: true);
+    }
+
+    protected override void Down(MigrationBuilder migrationBuilder)
+    {
+        migrationBuilder.DropColumn(
+            name: "Customer",
+            table: "Sales");
+    }
+}
+```
+- EF tracks schema changes in a migration history table (__EFMigrationsHistory).
+
+- This creates an app.db SQLite file and the Migrations/ folder
 
 b. Start the API:
 ```
