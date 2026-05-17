@@ -1,7 +1,5 @@
 # aspnetcore-efcore-db-webapi
 
-<img width="494" height="400" alt="image" src="https://github.com/user-attachments/assets/b2a8afe6-68ac-42f8-bdb1-a1aa4080e764" />
-
 A scalable .NET Solutions Architecture (ASP.NET Core + EF Core) code-first database example, where C# classes define the database schema. EF Core tracks schema changes via migrations for version control. This is designed with enterprise patterns (SOLID, Clean Architecture). Demonstrates:  
 - SQLServer/EF Core migrations  
 - RESTful API best practices  
